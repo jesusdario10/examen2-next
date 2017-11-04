@@ -1,0 +1,135 @@
+body{
+  font-family: 'Dancing Script', cursive;
+  background-color:#02010a;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+}
+header{
+  padding: 0px;
+}
+
+header div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 10px 10px 0px 0px;
+}
+nav{
+  margin: auto;
+  float: right;
+}
+#banner{
+  background-color:#5b7989;
+  text-shadow: 2px 2px  #02010a;
+  color: white;
+}
+#banner h1, nav{
+  width: 50%;
+}
+#banner nav a{
+  padding-left: 1vw;
+  float: right;
+  padding-right: 3vw;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: white;
+}
+#banner nav a:hover{
+  animation: letras_menu 0.5s;
+}
+@media(max-width:900px){
+  #banner h1{
+    width: 100%;
+    text-align: center;
+  }
+  #banner nav{
+    width: 100%;
+    text-align: center !important;
+  }
+  #banner nav a{
+    float: none;
+  }
+}
+@keyframes letras_menu {
+  0%{
+    font-size: 1.4em;
+  }
+  100%{
+    font-size: 1.6em;
+  }
+}
+#contenido{
+  background-color:#02010a;
+  width: 900px;
+  margin: auto;
+}
+section{
+  background-color: #d5c75f;
+}
+section{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section div{
+  width: 33.33%;
+}
+section div figure img{
+  width: 100%;
+  height: 16vh;
+  border-radius: 10px;
+  -moz-border-radius: 5px;=mozilla
+	-webkit-border-radius: 5px;=zafari
+}
+#nina{
+  -webkit-filter:blur(30px);
+  filter: blur(10px);
+}
+#modelo, #nina2, #anciana{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+#joven{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+footer{
+  background-color:#C6d5c5;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  border-radius:0px 0px 10px 10px;
+}
+footer .pie{
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  text-align: left;
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 3vw;
+}
+footer div div{
+    width: 18%;
+    padding-left: 3vw;
+  }
+@media(max-width:899px){
+  section div{
+    width: 100%;
+  }
+  section div figure img{
+    width: 100%;
+    height: auto;
+  }
+  .pie .pie1, .pie2, .pie3, .pie4{
+    width: 100%;
+    text-align: center;
+  }
+  #contenido{
+    width: 100vw;
+  }
+}
